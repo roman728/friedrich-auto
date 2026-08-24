@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>FriedrichAuto — автосервис в Петропавловске</title>
+<meta name="description" content="Замена масла, шиномонтаж и заправка автокондиционеров в Петропавловске." />
+<style>
+:root{--bg:#0b0d10;--panel:#12151a;--panel2:#181c22;--text:#f5f7fa;--muted:#a6adb8;--orange:#ff6a00;--orange2:#ff8a2a;--line:#2a3038;--max:1180px}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif}a{color:inherit;text-decoration:none}.wrap{width:min(var(--max),calc(100% - 36px));margin:auto}
+header{position:fixed;z-index:20;top:0;left:0;right:0;background:rgba(10,12,15,.72);backdrop-filter:blur(14px);border-bottom:1px solid rgba(255,255,255,.07)}.nav{height:74px;display:flex;align-items:center;justify-content:space-between;gap:20px}.brand{display:flex;align-items:center;gap:11px;font-weight:900;letter-spacing:.4px;font-size:22px}.mark{width:36px;height:36px;border-radius:10px;background:linear-gradient(135deg,var(--orange),#ff9d40);display:grid;place-items:center;color:#0b0d10;font-weight:1000}.navlinks{display:flex;gap:24px;color:#d8dde5;font-size:14px}.navlinks a:hover{color:#fff}.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;padding:14px 20px;border-radius:12px;background:var(--orange);color:white;font-weight:800;border:1px solid transparent;transition:.25s;cursor:pointer}.btn:hover{transform:translateY(-2px);background:var(--orange2)}.btn.ghost{background:transparent;border-color:#444b55;color:#fff}.btn.ghost:hover{border-color:var(--orange);color:var(--orange)}
+.hero{min-height:96vh;display:grid;align-items:end;position:relative;overflow:hidden;padding:120px 0 74px;background-image:linear-gradient(90deg,rgba(6,7,9,.96) 0%,rgba(6,7,9,.78) 43%,rgba(6,7,9,.24) 72%,rgba(6,7,9,.54) 100%),url('https://images.unsplash.com/photo-1643700973089-baa86a1ab9ee?auto=format&fit=crop&fm=jpg&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&ixlib=rb-4.1.0&q=78&w=2200');background-size:cover;background-position:center}.hero:after{content:"";position:absolute;inset:auto 0 0;height:180px;background:linear-gradient(transparent,var(--bg))}.hero .wrap{position:relative;z-index:2}.eyebrow{display:inline-flex;align-items:center;gap:9px;padding:8px 12px;border:1px solid rgba(255,106,0,.45);border-radius:999px;background:rgba(255,106,0,.08);color:#ffc59c;font-size:13px;font-weight:800;margin-bottom:22px}.dot{width:8px;height:8px;background:var(--orange);border-radius:50%;box-shadow:0 0 20px var(--orange)}h1{font-size:clamp(48px,7vw,92px);line-height:.95;max-width:880px;margin:0 0 24px;letter-spacing:-3px}.accent{color:var(--orange)}.lead{max-width:650px;color:#c6ccd5;font-size:clamp(18px,2vw,22px);line-height:1.55;margin-bottom:28px}.hero-actions{display:flex;gap:12px;flex-wrap:wrap}.trust{display:flex;gap:22px;flex-wrap:wrap;margin-top:36px;color:#dce1e8;font-size:14px}.trust span{display:flex;align-items:center;gap:8px}.trust b{color:white}
+section{padding:92px 0}.section-head{display:flex;justify-content:space-between;gap:30px;align-items:end;margin-bottom:32px}.kicker{color:var(--orange);font-size:13px;text-transform:uppercase;letter-spacing:2px;font-weight:900;margin-bottom:10px}.section-head h2{font-size:clamp(34px,4.5vw,58px);line-height:1.02;margin:0;letter-spacing:-1.8px}.section-head p{max-width:520px;color:var(--muted);line-height:1.6;margin:0}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.card{position:relative;min-height:500px;border:1px solid var(--line);border-radius:22px;overflow:hidden;background:var(--panel)}.card img{width:100%;height:100%;object-fit:cover;position:absolute;inset:0;filter:saturate(.82) contrast(1.05);transition:.45s}.card:hover img{transform:scale(1.04)}.card:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(5,6,8,.08) 25%,rgba(5,6,8,.94) 78%)}.card-content{position:absolute;z-index:2;left:24px;right:24px;bottom:24px}.num{font-size:12px;color:#ffb37d;font-weight:900;letter-spacing:1.6px}.card h3{font-size:29px;margin:8px 0 8px}.card p{color:#c8ced6;margin:0;line-height:1.5}.service-list{margin-top:12px;color:#fff;font-size:14px}
+.feature{background:linear-gradient(135deg,#111419,#0f1216);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}.stats{display:grid;grid-template-columns:1.15fr 1fr;gap:40px;align-items:center}.quote{font-size:clamp(30px,4vw,52px);line-height:1.08;letter-spacing:-1.4px}.quote strong{color:var(--orange)}.mini-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}.mini{background:#171b20;border:1px solid #272d35;padding:22px;border-radius:16px}.mini b{font-size:26px;display:block;margin-bottom:6px}.mini span{color:var(--muted);font-size:14px;line-height:1.45}.cta{padding:96px 0}.cta-box{border-radius:28px;padding:50px;background:radial-gradient(circle at 85% 20%,rgba(255,106,0,.3),transparent 32%),linear-gradient(135deg,#181b20,#0e1013);border:1px solid #2b3139;display:flex;justify-content:space-between;gap:28px;align-items:center}.cta h2{font-size:clamp(34px,4vw,56px);margin:0 0 10px;letter-spacing:-1.5px}.cta p{color:var(--muted);max-width:650px;margin:0}.contacts{display:flex;gap:12px;flex-wrap:wrap;justify-content:flex-end}
+footer{border-top:1px solid var(--line);padding:34px 0 42px;color:#8f97a3;font-size:14px}.foot{display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap}.orange{color:var(--orange)}
+.reveal{opacity:0;transform:translateY(22px);transition:.7s ease}.reveal.on{opacity:1;transform:none}
+@media(max-width:850px){.navlinks{display:none}.hero{min-height:88vh;background-position:58% center}.cards{grid-template-columns:1fr}.card{min-height:430px}.stats{grid-template-columns:1fr}.section-head{display:block}.section-head p{margin-top:16px}.cta-box{padding:32px 24px;display:block}.contacts{justify-content:flex-start;margin-top:24px}h1{letter-spacing:-2px}}
+@media(max-width:520px){.wrap{width:min(var(--max),calc(100% - 24px))}.nav{height:66px}.brand{font-size:18px}.mark{width:32px;height:32px}.nav .btn{padding:10px 12px;font-size:13px}.hero{padding-top:105px;padding-bottom:52px}.lead{font-size:17px}.hero-actions .btn{width:100%}.trust{gap:12px;margin-top:26px;display:grid}.card{min-height:390px}section{padding:70px 0}.mini-grid{grid-template-columns:1fr}.cta{padding:70px 0}.contacts .btn{width:100%}}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="#top"><span class="mark">F</span> FRIEDRICH<span class="orange">AUTO</span></a>
+    <nav class="navlinks"><a href="#services">Услуги</a><a href="#why">Почему мы</a><a href="#contacts">Контакты</a></nav>
+    <a class="btn" href="#contacts">Записаться</a>
+  </div>
+</header>
+<main id="top">
+<section class="hero">
+  <div class="wrap">
+    <div class="eyebrow"><span class="dot"></span> Автосервис в Петропавловске</div>
+    <h1>Сервис автомобиля <span class="accent">без лишней суеты.</span></h1>
+    <p class="lead">Замена масла, шиномонтаж и обслуживание автокондиционеров. Понятно объясняем, аккуратно работаем, ценим ваше время.</p>
+    <div class="hero-actions"><a class="btn" href="#contacts">Записаться на сервис →</a><a class="btn ghost" href="#services">Смотреть услуги</a></div>
+    <div class="trust"><span>★ <b>5.0</b> на Яндекс Картах</span><span>● Петропавловск</span><span>● ул. Юрия Медведева, 61/1</span></div>
+  </div>
+</section>
+
+<section id="services">
+<div class="wrap">
+  <div class="section-head reveal"><div><div class="kicker">Основные услуги</div><h2>То, за чем к нам<br>возвращаются</h2></div><p>Три ключевых направления FriedrichAuto — быстрые и понятные работы, которые нужны автомобилю регулярно и по сезону.</p></div>
+  <div class="cards">
+    <article class="card reveal"><img src="https://images.unsplash.com/photo-1643700973089-baa86a1ab9ee?auto=format&fit=crop&fm=jpg&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&ixlib=rb-4.1.0&q=76&w=1400" alt="Замена масла в автомобиле"><div class="card-content"><div class="num">01 / МАСЛО</div><h3>Замена масла</h3><p>Замена моторного масла и фильтров с базовой проверкой автомобиля.</p><div class="service-list">Масло • фильтры • контроль уровня</div></div></article>
+    <article class="card reveal"><img src="https://images.pexels.com/photos/17600886/pexels-photo-17600886/free-photo-of-mechanic-changing-car-wheel.jpeg?auto=compress&dpr=1&h=1200&w=1200" alt="Шиномонтаж"><div class="card-content"><div class="num">02 / КОЛЁСА</div><h3>Шиномонтаж</h3><p>Сезонная смена колёс, монтаж и демонтаж шин, проверка и подготовка к дороге.</p><div class="service-list">Монтаж • демонтаж • сезонная замена</div></div></article>
+    <article class="card reveal"><img src="https://images.pexels.com/photos/6131/car-auto-bmw-e46.jpg?auto=compress&dpr=1&h=1200&w=1200" alt="Автокондиционер"><div class="card-content"><div class="num">03 / КЛИМАТ</div><h3>Заправка кондиционера</h3><p>Проверка работы системы кондиционирования и заправка для комфортной поездки летом.</p><div class="service-list">Проверка • заправка • климат</div></div></article>
+  </div>
+</div>
+</section>
+
+<section id="why" class="feature">
+<div class="wrap stats">
+  <div class="quote reveal">Не просто «починили и забыли». <strong>Задача — чтобы клиент вернулся не из-за проблемы, а потому что доверяет.</strong></div>
+  <div class="mini-grid">
+    <div class="mini reveal"><b>5.0 ★</b><span>Высокий рейтинг на Яндекс Картах.</span></div>
+    <div class="mini reveal"><b>43+</b><span>Фотографии сервиса и работ в карточке компании.</span></div>
+    <div class="mini reveal"><b>3</b><span>Главных направления: масло, шины, кондиционеры.</span></div>
+    <div class="mini reveal"><b>1 клик</b><span>До записи через телефон, WhatsApp или Instagram.</span></div>
+  </div>
+</div>
+</section>
+
+<section id="contacts" class="cta">
+<div class="wrap">
+  <div class="cta-box reveal">
+    <div><div class="kicker">FriedrichAuto</div><h2>Пора обслужить автомобиль?</h2><p>Напишите или позвоните — подберём удобное время. Адрес: Петропавловск, ул. Юрия Медведева, 61/1.</p></div>
+    <div class="contacts"><a class="btn" href="https://www.instagram.com/friedrich_auto" target="_blank" rel="noopener">Instagram</a><a class="btn ghost" href="#" onclick="alert('В финальной версии здесь будет номер телефона / WhatsApp FriedrichAuto');return false;">Позвонить / WhatsApp</a></div>
+  </div>
+</div>
+</section>
+</main>
+<footer><div class="wrap foot"><div><b style="color:#fff">FRIEDRICH<span class="orange">AUTO</span></b> · Петропавловск</div><div>Демонстрационный макет сайта</div></div></footer>
+<script>
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)e.target.classList.add('on')}),{threshold:.12});document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+</script>
+</body></html>
